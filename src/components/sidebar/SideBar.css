@@ -1,0 +1,45 @@
+.active-btn{
+    background-color: #3A6FF8;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 12px 10px;
+}
+.btn-sidebar{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+.btn-sidebar span{
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--text-gray-black);
+}
+.active-btn svg{
+    fill: #F8F8F8 !important;
+
+}
+.active-btn span{
+    font-weight: 800;
+    font-size: 14px;
+    color: #F8F8F8;
+}
+/* .submenu li a{
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--text-gray-black);
+} */
+.activeToggle-btn{
+    padding: 10px 15px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.icon-color{
+    fill: var(--text-gray-black);
+}

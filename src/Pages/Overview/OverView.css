@@ -1,0 +1,35 @@
+.btn-paginate{
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 10px;
+    color: var(--text-gray-black);
+    border: solid 1px #31353F;
+    height: 22px;
+    padding: 0px 15px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.btnActivate-paginate{
+    background-color: #3A6FF8;
+    padding: 0px 15px;
+    color: var(--text-black-gray);
+    font-size: 10px;
+    height: 22px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.btnOperation{
+    @apply  text-white-black text-[14px] font-medium tracking-wide py-1 px-3
+}
+.btnOperation-Active{
+   @apply bg-secondery-color text-white-black text-[14px] font-medium tracking-wide rounded-md py-1 px-3 
+}
+.icon-color{
+    fill: var(--secondery-text-gray-black);
+}

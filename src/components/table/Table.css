@@ -1,0 +1,19 @@
+.thead-text{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 0px;
+    color: var(--text-gray-black);
+}
+.text-info-prodcut{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--seconderyT);
+}
+.text-profit{
+    font-weight: 400;
+    font-size: 16px;
+    color: #10B981;
+}
+.border-top{
+    border-top: 1px solid #E2E8F0;
+}

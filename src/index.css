@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: Raleway;
+  src: url("./assets/Fonts/Raleway/Raleway-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: Raleway;
+  src: url("./assets/Fonts/Raleway/Raleway-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Raleway;
+  src: url("./assets/Fonts/Raleway/Raleway-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: Raleway;
+  src: url("./assets/Fonts/Raleway/Raleway-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Raleway;
+  src: url("./assets/Fonts/Raleway/Raleway-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Raleway;
+  src: url("./assets/Fonts/Raleway/Raleway-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+* {
+  @apply transition-colors;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: RaleWay;
+}
+
+.light {
+  --primeryB: #f8f8f8;
+  --seconderyB: #ffffff;
+  --bg-gray-black: #1a2029;
+  --bg-white-black: #14161D;
+  --bg-black-gray: #353E4D;
+  --bg-icon: #F8F8F8;
+  --bg-icon2: #F8F8F8;
+  --primeryT: #1a2029;
+  --seconderyT: #14161d;
+  --text-gray-black: #1A2029;
+  --text-white-black: #14161d;
+  --secondery-text-gray-black: #1a2029;
+  --text-black-gray:  #1A2029;
+  background-color: var(--primeryB);
+}
+.dark {
+  --primeryB: #14161d;
+  --seconderyB: #1a2029;
+  --bg-gray-black: #9e9e9e;
+  --bg-white-black: #FFFFFF;
+  --bg-black-gray: #9E9E9E;
+  --bg-icon: #31353F;
+  --bg-icon2: #14161D;
+  --primeryT: #ffffff;
+  --seconderyT: #f8f8f8;
+  --text-gray-black: #9e9e9e;
+  --text-white-black: #ffffff;
+  --secondery-text-gray-black: #ADADAD;
+  --text-black-gray: #E4E4E4;
+  background-color: var(--primeryB);
+}
+@layer utilities {
+  .rtlf {
+    direction: rtl;
+  }
+}
+
+::-webkit-scrollbar{
+  background-color: transparent;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: skyblue;
+ 
+  border-radius:  20px;
+  -webkit-border-radius:  20px;
+  -moz-border-radius:  20px;
+  -ms-border-radius:  20px;
+  -o-border-radius:  20px;
+}
+

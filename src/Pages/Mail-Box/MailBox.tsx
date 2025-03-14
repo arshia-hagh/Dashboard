@@ -10,13 +10,11 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import ReactQuill from "react-quill"
 import 'react-quill/dist/quill.snow.css'
 import imgPP from "../../assets/img/PP.png";
 import imgFJ from "../../assets/img/FJ.png";
 import imgKD from "../../assets/img/KD.png";
 function MailBox() {
-  const [convertedText, setConvertedText] = useState("Some default content");
 
   const data = [
     {
@@ -62,7 +60,7 @@ function MailBox() {
       amt: 2100,
     },
   ];
-  const data01 = [
+  const data1 = [
     {
       name: "Group A",
       value: 400,
@@ -88,7 +86,7 @@ function MailBox() {
       value: 189,
     },
   ];
-  const data02 = [
+  const data2 = [
     {
       name: "Group A",
       value: 2400,
@@ -360,10 +358,10 @@ function MailBox() {
             </svg>
           </div>
 
-          <ResponsiveContainer width="100%" height="100%">
+          <ResponsiveContainer width="100%" height={250}>
             <PieChart width={730} height={250}>
               <Pie
-                data={data01}
+                data={data1}
                 dataKey="value"
                 nameKey="name"
                 cx="50%"
@@ -372,7 +370,7 @@ function MailBox() {
                 fill="#8884d8"
               />
               <Pie
-                data={data02}
+                data={data2}
                 dataKey="value"
                 nameKey="name"
                 cx="50%"
@@ -385,7 +383,7 @@ function MailBox() {
             </PieChart>
           </ResponsiveContainer>
         </div>
-        <div className="rounded-[20px] p-4 max-h-[290px] bg-secondery-color lg:w-1/3 sm:w-full">
+        <div className="rounded-[20px] p-4  max-h-[290px] bg-secondery-color lg:w-1/3 sm:w-full">
           <div className="flex items-center justify-between">
             <h6 className="font-semibold text-[16px] text-secondery-color">
               UPLOAD DATA
@@ -406,8 +404,7 @@ function MailBox() {
               />
             </svg>
           </div>
-
-          <ResponsiveContainer width="100%" height="80%">
+          <ResponsiveContainer width="100%" height={250}>
             <LineChart
               data={data}
               margin={{ top: 20, right: 30, left: 0, bottom: 5 }}
@@ -627,7 +624,7 @@ function MailBox() {
             </div>
           </div>
         </div>
-        <div>
+        {/* <div>
           <ReactQuill
             theme="snow"
             value={convertedText}
@@ -635,7 +632,7 @@ function MailBox() {
             style={{ minHeight: "300px" }}
             
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

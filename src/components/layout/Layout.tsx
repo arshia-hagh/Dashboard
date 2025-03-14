@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavBar from "../navbar/NavBar";
 import { useDispatch, useSelector } from "react-redux";
 import { RooteStore } from "../../Redux/store";

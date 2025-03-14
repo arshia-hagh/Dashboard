@@ -59,7 +59,6 @@ function Chart() {
       amt: 2100,
     },
   ];
-
   return (
     <motion.div
       variants={ShowPage}
